@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Terminal, Github, Linkedin as LinkedIn, FileText, ExternalLink, Code2 } from "lucide-react";
+import { Terminal, Github, Linkedin, FileText, ExternalLink, Code2 } from "lucide-react";
 
 interface Project {
   title: string;
