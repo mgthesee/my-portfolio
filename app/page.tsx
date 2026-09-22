@@ -48,7 +48,7 @@ export default function Portfolio() {
         <div className="md:col-span-2 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-neutral-900 border border-neutral-800 text-neutral-400">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            Available for SWE & Data Science Roles
+            Available for work!
           </div>
 
           <div className="space-y-2">
@@ -56,12 +56,12 @@ export default function Portfolio() {
               Mali Glemaud-Thesee
             </h1>
             <p className="text-xl sm:text-2xl font-medium text-neutral-300">
-              Computer Science Student @ Morehouse College
+              Computer Science @ Morehouse College
             </p>
           </div>
 
           <p className="text-neutral-400 text-lg leading-relaxed">
-            Building full-stack web applications, applied AI tooling, and data-driven systems. Focused on modern interface engineering, NLP pipelines, and interactive computing.
+            Building full-stack web applications, applied AI tooling, and data-driven systems.
           </p>
 
           {/* Action Buttons */}
