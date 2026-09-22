@@ -112,7 +112,7 @@ export default function Portfolio() {
             src="/profile.png"
             resolution={80}
             color="var(--color-neutral-500)"
-            animationStyle="matrix"
+            animationStyle="fade"
             animateOnView={false}
             className="w-full h-full bg-neutral-950"
           />
