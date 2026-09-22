@@ -3,8 +3,9 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Terminal, FileText, ExternalLink, Code2 } from "lucide-react";
+import { FileText, ExternalLink, Code2 } from "lucide-react";
 import { AsciiArt } from "@/components/ui/ascii-art";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 interface Project {
   title: string;
@@ -41,20 +42,24 @@ export default function Portfolio() {
     : projects.filter((p) => p.category === filter);
 
   return (
-    <main className="min-h-screen bg-neutral-950 text-neutral-100 font-sans px-6 py-12 max-w-4xl mx-auto selection:bg-neutral-800">
-      {/* Header / Intro */}
-      <header className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-16">
-        {/* Text Intro */}
-        <div className="md:col-span-2 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-neutral-900 border border-neutral-800 text-neutral-400">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            Available for work!
-          </div>
+    <BackgroundLines
+      fixed={true}
+      className="min-h-screen w-full bg-neutral-950 text-neutral-100 selection:bg-neutral-800"
+    >
+      <main className="font-sans px-6 py-12 max-w-4xl mx-auto">
+        {/* Header / Intro */}
+        <header className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-16">
+          {/* Text Intro */}
+          <div className="md:col-span-2 space-y-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-neutral-900/90 border border-neutral-800 text-neutral-400 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              Available for work!
+            </div>
 
-          <div className="space-y-2">
-            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-100">
-              Mali Glemaud-Thesee
-            </h1>
+            <div className="space-y-2">
+              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white via-neutral-100 to-neutral-400">
+                Mali Glemaud-Thesee
+              </h1>
             <p className="text-xl sm:text-2xl font-medium text-neutral-300">
               Computer Science @ Morehouse College
             </p>
@@ -201,5 +206,6 @@ export default function Portfolio() {
         Designed with Next.js, Tailwind CSS & Framer Motion.
       </footer>
     </main>
+  </BackgroundLines>
   );
 }
