@@ -107,14 +107,15 @@ export default function Portfolio() {
         </div>
 
         {/* ASCII Art Visual */}
-        <div className="h-64 w-full md:h-72 rounded-xl overflow-hidden border border-neutral-800/80 bg-neutral-900/40">
+        <div className="h-64 w-full md:h-72 rounded-xl overflow-hidden border border-neutral-800/80 bg-black">
           <AsciiArt
             src="/profile.png"
-            charset="binary"
-            resolution={70}
-            color="#10b981"
+            resolution={80}
+            color="#00ff00"
             animationStyle="matrix"
-            className="w-full h-full"
+            inverted
+            animateOnView={false}
+            className="w-full h-full bg-black"
           />
         </div>
       </header>
@@ -130,7 +131,7 @@ export default function Portfolio() {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-2.5 py-1 rounded transition-colors ${filter === cat
+                className={`cursor-pointer px-2.5 py-1 rounded transition-colors ${filter === cat
                   ? "bg-neutral-800 text-neutral-100 font-semibold"
                   : "text-neutral-500 hover:text-neutral-300"
                   }`}
