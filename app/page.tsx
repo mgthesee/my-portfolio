@@ -111,11 +111,10 @@ export default function Portfolio() {
           <AsciiArt
             src="/profile.png"
             resolution={80}
-            color="#00ff00"
+            color="var(--color-neutral-500)"
             animationStyle="matrix"
-            inverted
             animateOnView={false}
-            className="w-full h-full bg-black"
+            className="w-full h-full bg-neutral-950"
           />
         </div>
       </header>
