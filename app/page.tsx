@@ -110,10 +110,11 @@ export default function Portfolio() {
         <div>
           <AsciiArt
             src="/profile.png"
-            charset="binary"
-            resolution={70}
+            resolution={80}
             color="#00ff00"
             animationStyle="matrix"
+            inverted
+            animateOnView={false}
             className="mx-auto aspect-square w-full max-w-lg bg-black"
           />
         </div>
