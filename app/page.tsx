@@ -107,14 +107,14 @@ export default function Portfolio() {
         </div>
 
         {/* ASCII Art Visual */}
-        <div className="h-64 w-full md:h-72 rounded-xl overflow-hidden border border-neutral-800/80 bg-neutral-900/40">
+        <div>
           <AsciiArt
             src="/profile.png"
             charset="binary"
             resolution={70}
             color="#00ff00"
             animationStyle="matrix"
-            className="w-full h-full"
+            className="mx-auto aspect-square w-full max-w-lg bg-black"
           />
         </div>
       </header>
