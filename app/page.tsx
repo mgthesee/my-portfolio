@@ -48,9 +48,14 @@ export default function Portfolio() {
           Available for SWE & Data Science Roles
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-100">
-          Software Engineer & Data Researcher
-        </h1>
+        <div className="space-y-2">
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-neutral-100">
+            Mali Glemaud-Thesee
+          </h1>
+          <p className="text-xl sm:text-2xl font-medium text-neutral-300">
+            Aspiring Software Engineer & Data Scientist
+          </p>
+        </div>
         <p className="text-neutral-400 text-lg max-w-2xl leading-relaxed">
           Building full-stack web applications, applied AI tooling, and data-driven systems. Focused on modern interface engineering, NLP pipelines, and interactive computing.
         </p>
@@ -58,14 +63,14 @@ export default function Portfolio() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-4 pt-2">
           <a
-            href="/resume.pdf"
+            href="/SWE_Resume_Template__Mali_.pdf"
             target="_blank"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-100 text-neutral-950 font-medium hover:bg-neutral-200 transition-colors text-sm"
           >
             <FileText className="w-4 h-4" /> View Resume
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/mgthesee"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white hover:border-neutral-700 transition-colors text-sm"
@@ -80,7 +85,7 @@ export default function Portfolio() {
             <span>GitHub</span>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/maligt"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white hover:border-neutral-700 transition-colors text-sm"
