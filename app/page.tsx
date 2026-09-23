@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { FileText, ExternalLink, Code2 } from "lucide-react";
 import { AsciiArt } from "@/components/ui/ascii-art";
 import { BackgroundLines } from "@/components/ui/background-lines";
+import { cn } from "@/lib/utils";
+import { CanvasText } from "@/components/ui/canvas-text";
 
 interface Project {
   title: string;
@@ -57,8 +59,20 @@ export default function Portfolio() {
             </div>
 
             <div className="space-y-2">
-              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white via-neutral-100 to-neutral-400">
-                Mali Glemaud-Thesee
+              <h1 className="tracking-tight">
+                <CanvasText
+                  text="Mali Glemaud-Thesee"
+                  backgroundClassName="bg-blue-600 dark:bg-blue-700"
+                  className="text-3xl font-extrabold sm:text-4xl md:text-5xl"
+                  colors={[
+                    "var(--color-blue-500)",
+                    "var(--color-sky-500)",
+                    "var(--color-violet-500)",
+                    "var(--color-teal-500)",
+                  ]}
+                  lineGap={6}
+                  animationDuration={10}
+                />
               </h1>
             <p className="text-xl sm:text-2xl font-medium text-neutral-300">
               Computer Science @ Morehouse College
@@ -112,15 +126,16 @@ export default function Portfolio() {
         </div>
 
         {/* ASCII Art Visual */}
-        <div>
+        <div className="flex justify-center items-center">
           <AsciiArt
-            src="/profile.png"
-            resolution={80}
-            color="#00ff00"
-            animationStyle="matrix"
-            inverted
+            src="/profile2.png"
+            charset="blocks"
+            resolution={48}
+            inverted={false}
+            color="#0ea5e9"
+            animationStyle="typewriter"
             animateOnView={false}
-            className="mx-auto aspect-square w-full max-w-lg bg-black"
+            className="mx-auto aspect-square w-full max-w-lg bg-black rounded-xl overflow-hidden border border-neutral-800/80 shadow-2xl"
           />
         </div>
       </header>
