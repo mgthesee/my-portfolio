@@ -8,6 +8,8 @@ import { AsciiArt } from "@/components/ui/ascii-art";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { cn } from "@/lib/utils";
 import { CanvasText } from "@/components/ui/canvas-text";
+import { Tooltip } from "@/components/ui/tooltip-card";
+
 
 interface Project {
   title: string;
@@ -75,7 +77,19 @@ export default function Portfolio() {
                 />
               </h1>
               <p className="text-xl sm:text-2xl font-medium text-neutral-300">
-                Computer Science @ Morehouse College
+                Computer Science @ {" "}
+                <Tooltip
+                  content={
+                    <img
+                      src="/morehouse-college.png"
+                      alt="Morehouse College"
+                      className="w-full h-auto"
+                    />
+                  }
+                >
+                  {" "}  
+                  <span className="font-bold cursor-pointer">Morehouse College.</span>
+                </Tooltip>
               </p>
             </div>
 
