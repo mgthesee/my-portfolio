@@ -34,7 +34,7 @@ const projects: Project[] = [
     category: "Data Science & NLP",
     description: "Interactive visual analytics platform synthesizing 10-year CDC natality trends, geospatial mapping, and survey LDA topic modeling.",
     tags: ["Python", "React", "LDA NLP", "Time-Series", "Geospatial"],
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/lillyalice/joj_ca_maternal_health_dashboard",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function Portfolio() {
                 <Tooltip
                   content={
                     <img
-                      src="/morehouse-college.png"
+                      src="/morehouse-college.webp"
                       alt="Morehouse College"
                       className="w-full h-auto"
                     />
